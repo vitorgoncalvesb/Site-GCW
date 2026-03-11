@@ -34,10 +34,26 @@
   </ul>
 
   <a href="#" class="nav-cta">
-    <!-- shopping bag icon inline SVG -->
     <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
     Peça já
   </a>
+
+  <!-- Botão hambúrguer (só aparece no mobile) -->
+  <button class="nav-hamburger" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- Menu mobile drawer -->
+<nav class="mobile-nav" id="mobileNav" role="navigation" aria-label="Menu mobile">
+  <a href="#">Cardápio</a>
+  <a href="#">Localizações</a>
+  <a href="#">Sobre nossa comida</a>
+  <a href="#">Nossa história</a>
+  <a href="#">Franquia</a>
+  <a href="#" class="mobile-cta">🛍 Peça já</a>
 </nav>
 
 <!-- HERO -->
@@ -46,45 +62,43 @@
     <p>O hambúrguer do seu jeito.<br>Sempre fresco.<br>Sempre Five Guys.</p>
   </div>
   <div class="hero-right">
-    <img src="img/five-guys-iberia-program-v0-8bwbffhat4ke1.webp">
+    <img src="img/five-guys-iberia-program-v0-8bwbffhat4ke1.webp" alt="Five Guys">
   </div>
 </section>
 
 <!-- CARDS -->
 <div class="container">
   <div class="cards-row">
-  <div class="card">
-    <img class="card-img" src="img/five-guys-restaurant-building-storefront-amsterdam-ny-usa-outdoor-dining-area-tables-umbrellas-behind-fence-237163780.webp" alt="">
-    <div class="card-body">
-      <div class="card-icon">
-        <!-- map-pin -->
-        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+    <div class="card">
+      <img class="card-img" src="img/five-guys-restaurant-building-storefront-amsterdam-ny-usa-outdoor-dining-area-tables-umbrellas-behind-fence-237163780.webp" alt="">
+      <div class="card-body">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3>Ache um restaurante</h3>
+        <p>Encontre o Five Guys mais próximo de você e venha nos visitar.</p>
+        <a href="#" class="btn-red">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          Procurar lojas
+        </a>
       </div>
-      <h3>Ache um restaurante</h3>
-      <p>Encontre o Five Guys mais próximo de você e venha nos visitar.</p>
-      <a href="#" class="btn-red">
-        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        Procurar lojas
-      </a>
     </div>
-  </div>
 
-  <div class="card reverse">
-    <img class="card-img" src="img/five-guys-find-a-store-768x767.jpg" alt="">
-    <div class="card-body">
-      <div class="card-icon">
-        <!-- gift -->
-        <svg viewBox="0 0 24 24"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z"/></svg>
+    <div class="card reverse">
+      <img class="card-img" src="img/five-guys-find-a-store-768x767.jpg" alt="">
+      <div class="card-body">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z"/></svg>
+        </div>
+        <h3>Presenteie alguém</h3>
+        <p>Dê de presente o sabor autêntico dos hambúrgueres Five Guys com nossos Gift Cards.</p>
+        <a href="#" class="btn-red">
+          <svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          Comprar Gift Card
+        </a>
       </div>
-      <h3>Presenteie alguém</h3>
-      <p>Dê de presente o sabor autêntico dos hambúrgueres Five Guys com nossos Gift Cards.</p>
-      <a href="#" class="btn-red">
-        <svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
-        Comprar Gift Card
-      </a>
     </div>
   </div>
-</div>
 </div>
 
 <!-- APP BANNER -->
@@ -100,66 +114,68 @@
 <!-- FAQ -->
 <section class="faq-section">
   <div class="container">
-  <h2>Como podemos te ajudar?</h2>
-  <div class="faq-list">
-    <div class="faq-item">
-      <button class="faq-btn" onclick="toggleFaq(this)">
-        Quais meios de pagamento o Five Guys aceita?
-        <span class="faq-chev"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
-      </button>
-      <div class="faq-answer">Aceitamos cartões de crédito e débito das principais bandeiras, dinheiro, Pix e vale-refeição. Consulte a loja mais próxima para opções específicas.</div>
+    <h2>Como podemos te ajudar?</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          Quais meios de pagamento o Five Guys aceita?
+          <span class="faq-chev"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer">Aceitamos cartões de crédito e débito das principais bandeiras, dinheiro, Pix e vale-refeição. Consulte a loja mais próxima para opções específicas.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          Como posso cancelar o meu pedido?
+          <span class="faq-chev"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer">Para cancelar seu pedido, entre em contato com a loja diretamente ou acesse o aplicativo Five Guys e selecione a opção de cancelamento na tela de pedidos.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          Status do meu pedido
+          <span class="faq-chev"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer">Acompanhe seu pedido em tempo real pelo aplicativo Five Guys, desde o preparo até a entrega.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          O meu pedido não chegou como esperado
+          <span class="faq-chev"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer">Lamentamos pela experiência! Entre em contato com nossa equipe de atendimento pelo app ou telefone e resolveremos o problema o mais rápido possível.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          Meu cartão foi rejeitado
+          <span class="faq-chev"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer">Verifique os dados do cartão e tente novamente. Se o problema persistir, entre em contato com seu banco ou escolha outro método de pagamento disponível.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          Confirmação da compra?
+          <span class="faq-chev"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="faq-answer">Uma confirmação do seu pedido será enviada por e-mail e também aparecerá no aplicativo Five Guys assim que o pagamento for aprovado.</div>
+      </div>
     </div>
-    <div class="faq-item">
-      <button class="faq-btn" onclick="toggleFaq(this)">
-        Como posso cancelar o meu pedido?
-        <span class="faq-chev"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
-      </button>
-      <div class="faq-answer">Para cancelar seu pedido, entre em contato com a loja diretamente ou acesse o aplicativo Five Guys e selecione a opção de cancelamento na tela de pedidos.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-btn" onclick="toggleFaq(this)">
-        Status do meu pedido
-        <span class="faq-chev"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
-      </button>
-      <div class="faq-answer">Acompanhe seu pedido em tempo real pelo aplicativo Five Guys, desde o preparo até a entrega.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-btn" onclick="toggleFaq(this)">
-        O meu pedido não chegou como esperado
-        <span class="faq-chev"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
-      </button>
-      <div class="faq-answer">Lamentamos pela experiência! Entre em contato com nossa equipe de atendimento pelo app ou telefone e resolveremos o problema o mais rápido possível.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-btn" onclick="toggleFaq(this)">
-        Meu cartão foi rejeitado
-        <span class="faq-chev"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
-      </button>
-      <div class="faq-answer">Verifique os dados do cartão e tente novamente. Se o problema persistir, entre em contato com seu banco ou escolha outro método de pagamento disponível.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-btn" onclick="toggleFaq(this)">
-        Confirmação da compra?
-        <span class="faq-chev"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
-      </button>
-      <div class="faq-answer">Uma confirmação do seu pedido será enviada por e-mail e também aparecerá no aplicativo Five Guys assim que o pagamento for aprovado.</div>
-    </div>
-  </div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;">
-  <span>© 2025 Five Guys Enterprises, LLC. Todos os direitos reservados.</span>
-  <div class="footer-links">
-    <a href="#">Política de privacidade</a>
-    <a href="#">Termos de uso</a>
-    <a href="#">Acessibilidade</a>
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;width:100%;">
+    <span>© 2025 Five Guys Enterprises, LLC. Todos os direitos reservados.</span>
+    <div class="footer-links">
+      <a href="#">Política de privacidade</a>
+      <a href="#">Termos de uso</a>
+      <a href="#">Acessibilidade</a>
+    </div>
   </div>
 </footer>
 
 <script>
+// FAQ accordion
 function toggleFaq(btn) {
   var item = btn.closest('.faq-item');
   var wasOpen = item.classList.contains('open');
@@ -167,6 +183,7 @@ function toggleFaq(btn) {
   if (!wasOpen) item.classList.add('open');
 }
 
+// Scroll reveal
 var obs = new IntersectionObserver(function(entries) {
   entries.forEach(function(e, i) {
     if (e.isIntersecting) {
@@ -175,7 +192,42 @@ var obs = new IntersectionObserver(function(entries) {
     }
   });
 }, { threshold: 0.10 });
-document.querySelectorAll('.reveal').forEach(function(el){ obs.observe(el); }); // cards are no longer .reveal so nothing else is observed now
+document.querySelectorAll('.reveal').forEach(function(el){ obs.observe(el); });
+
+// Mobile menu toggle
+var toggle = document.getElementById('menuToggle');
+var mobileNav = document.getElementById('mobileNav');
+
+toggle.addEventListener('click', function() {
+  var isOpen = mobileNav.classList.contains('open');
+  if (isOpen) {
+    mobileNav.classList.remove('open');
+    toggle.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  } else {
+    mobileNav.classList.add('open');
+    toggle.classList.add('open');
+    toggle.setAttribute('aria-expanded', 'true');
+  }
+});
+
+// Fechar menu ao clicar em link
+mobileNav.querySelectorAll('a').forEach(function(link) {
+  link.addEventListener('click', function() {
+    mobileNav.classList.remove('open');
+    toggle.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  });
+});
+
+// Fechar menu ao clicar fora
+document.addEventListener('click', function(e) {
+  if (!mobileNav.contains(e.target) && !toggle.contains(e.target)) {
+    mobileNav.classList.remove('open');
+    toggle.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+});
 </script>
 </body>
 </html>
