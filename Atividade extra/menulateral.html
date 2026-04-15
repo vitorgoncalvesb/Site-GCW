@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Painel de Cursos</title>
+
+<style>
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f9;
+}
+
+/* Menu lateral */
+nav {
+    background: #1e293b; /* azul escuro moderno */
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/* Lista */
+nav ul {
+    list-style: none;
+}
+
+/* Itens */
+nav ul li {
+    position: relative;
+}
+
+/* Links principais */
+nav ul li a {
+    display: block;
+    padding: 12px 18px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #e2e8f0;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Hover */
+nav ul li a:hover {
+    background-color: #38bdf8;
+    color: #0f172a;
+}
+
+/* Submenu */
+nav ul ul {
+    display: none;
+    background: #334155;
+    padding-left: 10px;
+}
+
+/* Mostrar submenu */
+nav ul li:hover > ul {
+    display: block;
+}
+
+/* Itens do submenu */
+nav ul ul li {
+    border-bottom: 1px solid #475569;
+}
+
+/* Links submenu */
+nav ul ul li a {
+    font-weight: normal;
+    font-size: 14px;
+    color: #cbd5f5;
+}
+
+/* Conteúdo */
+.content {
+    margin-left: 280px;
+    padding: 30px;
+}
+
+/* Título */
+.content h1 {
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+/* Parágrafo */
+.content p {
+    color: #475569;
+    line-height: 1.6;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <ul>
+
+        <li>
+            <a href="#">💻 Desenvolvimento Web</a>
+            <ul>
+                <li><a href="#">HTML e CSS</a></li>
+                <li><a href="#">JavaScript Básico</a></li>
+                <li><a href="#">Responsividade</a></li>
+                <li><a href="#">Flexbox e Grid</a></li>
+                <li><a href="#">Git e GitHub</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">📱 Programação Mobile</a>
+            <ul>
+                <li><a href="#">Introdução ao Android</a></li>
+                <li><a href="#">React Native</a></li>
+                <li><a href="#">Flutter</a></li>
+                <li><a href="#">Interface Mobile</a></li>
+                <li><a href="#">Publicação de Apps</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">🧠 Tecnologia & Inovação</a>
+            <ul>
+                <li><a href="#">Inteligência Artificial</a></li>
+                <li><a href="#">Cybersegurança</a></li>
+                <li><a href="#">Banco de Dados</a></li>
+                <li><a href="#">Cloud Computing</a></li>
+                <li><a href="#">Internet das Coisas</a></li>
+            </ul>
+        </li>
+
+    </ul>
+</nav>
+
+<div class="content">
+    <h1>Painel de Aprendizagem 🚀</h1>
+    <p>Explore os cursos disponíveis no menu ao lado e desenvolva suas habilidades na área de tecnologia.</p>
+    <p>Escolha um tema e comece sua jornada no mundo da programação e inovação!</p>
+</div>
+
+</body>
+</html>
